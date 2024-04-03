@@ -21,7 +21,7 @@ def palindrome_reorder(palindromo):
                 list_resultados.append(k*(v//2))
 
             # Si el caracter es igual a 2, agrega uno de ellos a la lista de resultados
-            if v ==2:
+            if v == 2:
                 list_resultados.append(k)
         #Agrega los caracteres impares a la lista de resultados
         for k, v in list_palindromos.items():
@@ -37,9 +37,9 @@ def palindrome_reorder(palindromo):
                 if v == 2:
                     list_resultados.append(k)
                     
-                if v % 2 != 0:
-                    if v > 2:
-                        list_resultados.append(k*(v//2))
+            if v % 2 != 0:
+                if v > 2:
+                    list_resultados.append(k*(v//2))
         # Convierte la lista de caracteres resultantes en una cadena y la retorna
         return "".join(list_resultados)
     else:
